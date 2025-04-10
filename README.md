@@ -19,7 +19,7 @@ This project generates a **synthetic underwater dataset** from STL 3D models usi
 
 ## 📁 Directory Structure
 
-<pre> ```bash output/ 
+<pre> output/ 
   └── run_YYYYMMDD_HHMMSS/           # Unique run folder timestamped at generation
     ├── images/                    # Contains generated images
     │   ├── train/                 # Training images
@@ -30,18 +30,18 @@ This project generates a **synthetic underwater dataset** from STL 3D models usi
     ├── logs/                      # Additional logs or metadata
     ├── generator.log              # Log file with generation summary
     ├── diagnostics/ (optional)    # Visual/debugging outputs for inspection
-    └── dataset.yaml               # YOLO-compatible dataset configuration file ``` </pre>
+    └── dataset.yaml               # YOLO-compatible dataset configuration file </pre>
 
 
 ##🔧 Configuration
 
-STL_DIR = "path/to/STL models"         # Input STL folder
+<pre>STL_DIR = "path/to/STL models"         # Input STL folder
 BASE_OUTPUT = "path/to/output dir"     # Output folder
 CLASS_NAME = 'propeller'               # Class name (single class setup)
 IMG_SIZE = 512                         # Rendered image resolution
 NUM_IMAGES_PER_FILE = 40               # Per STL file
 TRAIN_RATIO = 0.8                      # Train-validation split
-SAVE_DIAGNOSTICS = True                # Saves visual diagnostics if True
+SAVE_DIAGNOSTICS = True                # Saves visual diagnostics if True</pre>
 
 ## ⚙️ Requirements
 
@@ -49,7 +49,3 @@ Install dependencies using pip:
 
 ```bash
 pip install trimesh pyrender opencv-python-headless albumentations matplotlib scikit-learn
-
-
-
-              
