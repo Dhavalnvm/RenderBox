@@ -19,7 +19,18 @@ This project generates a **synthetic underwater dataset** from STL 3D models usi
 
 ## 📁 Directory Structure
 
-<pre> ```bash output/ └── run_YYYYMMDD_HHMMSS/ # Unique run folder timestamped at generation ├── images/ # Contains generated images │ ├── train/ # Training images │ └── val/ # Validation images ├── labels/ # Corresponding YOLO-format annotation files │ ├── train/ # Training labels │ └── val/ # Validation labels ├── logs/ # Additional logs or metadata ├── generator.log # Log file with generation summary ├── diagnostics/ # (optional) Visual/debugging outputs for inspection └── dataset.yaml # YOLO-compatible dataset configuration file ``` </pre>
+<pre> ```bash output/ 
+  └── run_YYYYMMDD_HHMMSS/           # Unique run folder timestamped at generation
+    ├── images/                    # Contains generated images
+    │   ├── train/                 # Training images
+    │   └── val/                   # Validation images
+    ├── labels/                   # Corresponding YOLO-format annotation files
+    │   ├── train/                 # Training labels
+    │   └── val/                   # Validation labels
+    ├── logs/                      # Additional logs or metadata
+    ├── generator.log              # Log file with generation summary
+    ├── diagnostics/ (optional)    # Visual/debugging outputs for inspection
+    └── dataset.yaml               # YOLO-compatible dataset configuration file ``` </pre>
 
 
 ##🔧 Configuration
